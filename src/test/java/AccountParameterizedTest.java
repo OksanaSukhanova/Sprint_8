@@ -1,3 +1,4 @@
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,6 +31,7 @@ public class AccountParameterizedTest {
         };
     }
 
+    @DisplayName("Check format method works correctly with name {name}")
     @Test
     public void checkNameToEmbossReturnsCorrectValue() {
         Account accountName = new Account(name);

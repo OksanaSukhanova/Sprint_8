@@ -1,3 +1,5 @@
+import io.qameta.allure.Step;
+
 public class Account {
 
     private final String name;
@@ -6,6 +8,7 @@ public class Account {
         this.name = name;
     }
 
+    @Step("Check that name has correct format")
     public boolean checkNameToEmboss() {
         /*
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
