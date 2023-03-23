@@ -31,7 +31,7 @@ public class AccountParameterizedTest {
         };
     }
 
-    @DisplayName("Check format method works correctly with name {name}")
+    @DisplayName("Check format method works correctly with name")
     @Test
     public void checkNameToEmbossReturnsCorrectValue() {
         Account accountName = new Account(name);

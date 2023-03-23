@@ -8,7 +8,7 @@ public class Account {
         this.name = name;
     }
 
-    @Step("Check that name has correct format")
+    @Step("Check that name {name} has correct format")
     public boolean checkNameToEmboss() {
         /*
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
